@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Metaprogramação</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css">
+
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/meta.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Metaprogramação com PHP</h2>
+					<p class="fragment" style="font-size: 4rem;">"Ino e voltano"</p>
+				</section>
+
+
+				<section><h2>Quem sou eu?</h2></section>
+
+				<section>
+					<div style="display: flex;">
+						<div>
+							<h3>Henrique Lima</h3>
+
+							<ul style="font-size: 2rem">
+								<li class="fragment">Formando em Ciência da Computação pela UFC;</li>
+								<li class="fragment">+5 anos de experiência em desenvolvimento web;</li>
+								<li class="fragment">Atua em projetos Open Source pela <span style="color: #416d31;">Ser<strong>tão</strong>Dev</span> e em projetos internacionais pela <strong><span style="color: #6c6c6c;">Else</span></strong>;</li>
+								<li class="fragment">Entusiasta do café e de outras tecnologias;</li>
+								<li class="fragment">Evangelista cristão e do software livre.</li>
+								<li class="fragment" style="color: #007cba;"><strong>PHP</strong> com <strong>Rapadura</strong></li>
+                                <li class="fragment" style="color: #B45F06;"><strong>PHP</strong>este</li>
+							</ul>
+						</div>
+						<div style="width: 40%;">
+							<img src="img/henrique-php-pest.jpeg" alt="">
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h1>A questão é:</h1>
+					<h3 class="fragment" style="color: #007cba;"><strong>O que é?</strong></h3>
+					<h3 class="fragment" style="color: #B45F06;"><strong>O que faz?</strong></h3>
+					<h3 class="fragment" style="color: #06b486;"><strong>Onde usamos?</strong></h3>
+				</section>
+
+
+				<section>
+					<h1>O que é Meta?</h1>
+				</section>
+
+				<section data-background="#333">
+					<p style="font-size: 3rem; font-style: italic;">
+						Metaprogramação é o conceito/técnica de escrever programas que podem <strong class="fragment highlight-red">manipular</strong>, <strong class="fragment highlight-red">gerar</strong> ou <strong class="fragment highlight-red">modificar</strong> outros programas, incluindo a si mesmos.
+					</p>
+				</section>
+
+				<section>
+					Vamos começar pelo<br> 
+					<div class="fragment grow">começo<span><strong></strong></span>!</div>
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-init-1.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-init-2.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-init-3.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-init-class.png" alt="">
+				</section>
+
+				<section>
+					<h2>Opções</h2>
+					<ul>
+						<li class="fragment">Métodos Mágicos e Funções Dinâmicas</li>
+						<li class="fragment">Criação Dinâmica de Classes e Código</li>
+						<li class="fragment">Atributos (PHP 8.0+)</li>
+						<li class="fragment">Reflection API</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Métodos <strong class="fragment highlight-red">Mágicos</strong> e Funções <strong class="fragment highlight-blue">Dinâmicas</strong></h3>
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/magic-method.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-result/meta-result-magic-example.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/dynamic-code.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-result/meta-result-magic-dynamic.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/code-class-dynamic.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/macro-laravel.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/my-meta-macro.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-result/meta-result-my-macro.png"">
+				</section>
+
+				<section>
+					<h1>O que é Reflection?</h1>
+				</section>
+
+				<section>
+					<img src="img/metaprogramming/my-reflection-dark.jpg" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/reflection-example.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-result/meta-result-reflection-example.png" alt="">
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-php8-attr-1.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-ligth/meta-php8-attr-2.png" alt="">
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/code-result/meta-result-php8-attr.png" alt="">
+				</section>
+
+				<section>
+					<h3 class="fragment">Eu ainda não entendi :/</h3>
+					<h2 class="fragment">Vamos a um comparativo</h2>
+				</section>
+
+				<section data-background="#333">
+					<img src="img/metaprogramming/table-comparation.png" alt="">
+				</section>
+
+				<section>
+					<p class="r-fit-text">Onde usar?</p>
+				</section>
+
+				<section>
+					<img src="img/metaprogramming/reflection-everywhere.jpg" alt="">
+				</section>
+
+				<section>
+					<h1>Quem usa?</h1>
+					<ul class="fragment">
+						<li>Frameworks Modernos
+							<ul>
+								<li>Laravel</li>
+								<li>Symfony</li>
+							</ul>
+						</li>
+						<li>Automatizações e Ferramentas</li>
+						<li>Testes e Mocking</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Quando usar?</h1>
+					<ul>
+						<li class="fragment">Utilize metaprogramação apenas quando ela traz um benefício claro.</li>
+						<li class="fragment">Priorizando sempre a simplicidade e manutenção.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Cuidados ao Usar Metaprogramação</h1>
+					<ul class="fragment">
+						<li class="fragment">Performance: Evitar reflexões ou geração de código em loops críticos.</li>
+						<li class="fragment">Legibilidade: Código dinâmico pode ser mais difícil de manter.</li>
+						<li class="fragment">Segurança: Nunca confie em entradas externas para gerar código diretamente.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Um pouco sobre o bom caminho</h1>
+					<p class="fragment">O PHP oferece ferramentas poderosas como a Reflection API, métodos mágicos e atributos para metaprogramação. Apesar de útil, deve ser usada com cautela e propósito claro.</p>
+				</section>
+
+				<section data-background="img/isso_e_tudo_pessoal.gif"></section>
+
+				<section>
+					<p class="r-fit-text">DÚVIDAS?</p>
+				</section>
+
+				<section>
+					<h2>Referências</h2>
+					<h4>E de onde tu tirou isso homi?</h4>
+					<ul>
+						<li>
+							<a href="https://www.php.net/reflectionclass ">
+								Reflection Class Documentation
+							</a>
+						</li>
+						<li>
+							<a href="https://cursos.alura.com.br/course/metaprogramacao-php-api-reflection">
+								Metaprogramação com PHP usando API Reflection
+							</a>
+						</li>
+
+						<li>
+							<a href="http://br.phptherightway.com">
+								PHP The Right Way
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.linuxjournal.com/article/9604 ">
+								An Introduction to Metaprogramming
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					Valeu primo!
+
+					<br><br><br>
+
+					@henriquelopeslima
+					<br>
+
+					https://linkedin.com/in/henriquelopeslima
+
+                    <br>
+
+                    <strong>Soli Deo Gloria</strong>
+				</section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../plugin/zoom/zoom.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				mermaid: {
+					// flowchart: {
+					//   curve: 'linear',
+					// },
+				},
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ],
+			});
+		</script>
+	</body>
+</html>
