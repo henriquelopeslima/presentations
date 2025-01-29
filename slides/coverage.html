@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Cobrindo as bandas</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css">
+
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/meta.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Cobertura de código</h2>
+					<p class="fragment" style="font-size: 4rem;">"As bandas e os fundos"</p>
+				</section>
+
+				<section><h2>Quem sou eu?</h2></section>
+
+				<section>
+					<div style="display: flex;">
+						<div>
+							<h3>Henrique Lima</h3>
+
+							<ul style="font-size: 2rem">
+								<li class="fragment">Formando em Ciência da Computação pela UFC;</li>
+								<li class="fragment">+5 anos de experiência em desenvolvimento web;</li>
+								<li class="fragment">Atua em projetos Open Source pela <span style="color: #416d31;">Ser<strong>tão</strong>Dev</span> e em projetos internacionais pela <strong><span style="color: #6c6c6c;">Else</span></strong>;</li>
+								<li class="fragment">Entusiasta do café e de outras tecnologias;</li>
+								<li class="fragment">Evangelista cristão e do software livre.</li>
+								<li class="fragment" style="color: #007cba;"><strong>PHP</strong> com <strong>Rapadura</strong></li>
+                                <li class="fragment" style="color: #B45F06;"><strong>PHP</strong>este</li>
+							</ul>
+						</div>
+						<div style="width: 40%;">
+							<img src="img/henrique-php-pest.jpeg" alt="">
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h1>O que é Cobertura de Testes?</h1>
+				</section>
+
+				<section>
+					<iframe src="https://giphy.com/embed/QXSJJuh5WLtepV8w9M" width="400px" height="400px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				</section>
+
+				<section data-background="#333">
+					<p style="font-size: 3rem; font-style: italic;">
+						É uma avalição quantitativa acerca do quão "testado" é a aplicação
+					</p>
+				</section>
+
+				<section>
+					Vamos começar pelo<br> 
+					<div class="fragment grow">começo<span><strong></strong></span>!</div>
+				</section>
+
+				<section>
+					<h2>Tipos de Cobertura de Testes</h2>
+					<ul>
+						<li class="fragment">Line Coverage</li>
+						<li class="fragment">Branch Coverage</li>
+						<li class="fragment">Path Coverage</li>
+						<li class="fragment">Function and Method Coverage</li>
+						<li class="fragment">Class and Trait Coverage</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Line Coverage</h2>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+function sayHello(bool $morning): string {
+	if ($morning) {
+		return 'Good morning!';
+	}
+	return 'Hello!';
+}
+						</code>
+					</pre>
+					<h3>Teste:</h3>
+					<pre>
+						<code>
+$this->assertSame('Good morning!', sayHello(true));
+$this->assertSame('Hello!', sayHello(false));
+						</code>
+					</pre>
+				</section>
+				
+				<section>
+					<h2>Branch Coverage</h2>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+function canVote(int $age): string {
+	if ($age >= 18) {
+		return 'Yes';
+	} else {
+		return 'No';
+	}
+}
+						</code>
+					</pre>
+					<h3>Teste:</h3>
+					<pre>
+						<code>
+$this->assertSame('Yes', canVote(20));
+$this->assertSame('No', canVote(15));
+						</code>
+					</pre>
+				</section>
+				
+				<section>
+					<h2>Path Coverage</h2>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+function checkAccess(int $age, bool $hasPermission): string {
+	if ($age >= 18) {
+		if ($hasPermission) {
+			return 'Access granted';
+		}
+		return 'Access denied';
+	}
+	return 'Too young';
+}
+						</code>
+					</pre>
+					<h3>Teste:</h3>
+					<pre>
+						<code>
+$this->assertSame('Access granted', checkAccess(20, true));
+$this->assertSame('Access denied', checkAccess(20, false));
+$this->assertSame('Too young', checkAccess(15, false));
+						</code>
+					</pre>
+				</section>
+				
+				<section>
+					<h2>Function and Method Coverage</h2>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+class Calculator {
+	public function add(int $a, int $b): int {
+		return $a + $b;
+	}
+	public function subtract(int $a, int $b): int {
+		return $a - $b;
+	}
+}
+						</code>
+					</pre>
+					<h3>Teste:</h3>
+					<pre>
+						<code>
+$calculator = new Calculator();
+$this->assertSame(5, $calculator->add(2, 3));
+$this->assertSame(1, $calculator->subtract(3, 2));
+						</code>
+					</pre>
+				</section>
+				
+				<section>
+					<h2>Class and Trait Coverage</h2>
+				</section>
+
+				<section>
+					<pre>
+						<code>
+class User {
+	public function getName(): string {
+		return 'John Doe';
+	}
+	public function getAge(): int {
+		return 30;
+	}
+}
+						</code>
+					</pre>
+					<h3>Teste:</h3>
+					<pre>
+						<code>
+$user = new User();
+$this->assertSame('John Doe', $user->getName());
+$this->assertSame(30, $user->getAge());
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Ferramentas para "Medir" Cobertura</h2>
+					<ul>
+						<li class="fragment">PHP_CodeCoverage</li>
+						<li class="fragment">Xdebug</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Mitos e Realidades</h1>
+					<ul>
+						<li class="fragment">100% de cobertura significa código perfeito.</li>
+						<li class="fragment">Cobertura alta não garante ausência de bugs.</li>
+						<li class="fragment">Cobertura baixa é sempre ruim.</li>
+						<li class="fragment">Depende das prioridades e do contexto do projeto.</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h1>Estratégias para Melhorar a Cobertura</h1>
+					<ul>
+						<li class="fragment">Priorize funcionalidades críticas.</li>
+						<li class="fragment">Pratique **TDD (Test-Driven Development)**.</li>
+						<li class="fragment">Use ferramentas de análise estática para identificar lacunas.</li>
+						<li class="fragment">Automatize a medição de cobertura em pipelines CI/CD.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Desafios e Limitações</h1>
+					<ul class="fragment">
+						<li class="fragment">Códigos difíceis de testar(Integrações complexas).</li>
+						<li class="fragment">Manutenção de testes quebrados após mudanças. </li>
+						<li class="fragment">Falso senso de segurança ao confiar apenas em métricas.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Um pouco sobre o bom caminho</h1>
+					<p class="fragment">Reforce a importância da cobertura de testes como uma métrica auxiliar.</p>
+					<p class="fragment">Equilibre qualidade e quantidade nos testes.</p>
+					<p class="fragment">Próximos passos: Adotar ferramentas e praticar melhorias contínuas.</p>
+				</section>
+
+				<section data-background="img/isso_e_tudo_pessoal.gif"></section>
+
+				<section>
+					<p class="r-fit-text">DÚVIDAS?</p>
+				</section>
+
+				<section>
+					<h2>Referências</h2>
+					<h4>E de onde tu tirou isso homi?</h4>
+					<ul>
+						<li>
+							<a href="https://github.com/squizlabs/PHP_CodeSniffer">
+								GitHub PHP_CodeSniffer
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					Valeu primo!
+
+					<br><br><br>
+
+					@henriquelopeslima
+					<br>
+
+					https://linkedin.com/in/henriquelopeslima
+
+                    <br>
+
+                    <strong>Soli Deo Gloria</strong>
+				</section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../plugin/zoom/zoom.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				mermaid: {
+					// flowchart: {
+					//   curve: 'linear',
+					// },
+				},
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ],
+			});
+		</script>
+	</body>
+</html>
