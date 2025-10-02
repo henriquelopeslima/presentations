@@ -1,103 +1,676 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Paruano</title>
+        <title>Paruano</title>
 
-		<link rel="stylesheet" href="../dist/reset.css">
-		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../dist/theme/white.css">
+        <link rel="stylesheet" href="../dist/reset.css">
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/white.css">
 
-		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
 
-		<link rel="stylesheet" href="css/meta.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h2>PHP do Paruano</h2>
-				</section>
-
-
-				<section><h2>Quem sou eu?</h2></section>
-
-				<section>
-					<div style="display: flex;">
-						<div>
-							<h3>Henrique Lima</h3>
-
-							<ul style="font-size: 2rem">
-								<li class="fragment">Formando em Ciência da Computação pela UFC;</li>
-								<li class="fragment">+6 anos de experiência em desenvolvimento web;</li>
-								<li class="fragment">Atua em projetos Open Source pela <span style="color: #416d31;">Ser<strong>tão</strong>Dev</span> e em projetos internacionais pela <strong><span style="color: #d85b13;">Objective</span></strong>;</li>
-								<li class="fragment">Entusiasta do café e de outras tecnologias;</li>
-								<li class="fragment">Evangelista cristão e do software livre.</li>
-								<li class="fragment" style="color: #007cba;"><strong>PHP</strong> com <strong>Rapadura</strong></li>
-                                <li class="fragment" style="color: #B45F06;"><strong>PHP</strong>este</li>
-							</ul>
-						</div>
-						<div style="width: 40%;">
-							<img src="img/henrique-php-pest.jpeg" alt="">
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<h3>Um pouco do que vamos falar</h3>
-				</section>
+        <link rel="stylesheet" href="css/meta.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h2>PHP do "paruano"</h2>
+                    <h4 class="fragment">Tudo que cê ainda não tá usando (Mas devia!)</h4>
+                </section>
 
 
-				<section>
-				</section>
+                <section><h2>Quem sou eu?</h2></section>
+
+                <section>
+                    <div style="display: flex;">
+                        <div>
+                            <h3>Henrique Lima</h3>
+
+                            <ul style="font-size: 2rem">
+                                <li class="fragment">Formando em Ciência da Computação pela UFC;</li>
+                                <li class="fragment">+6 anos de experiência em desenvolvimento web;</li>
+                                <li class="fragment">Atua em projetos Open Source pela <span style="color: #416d31;">Ser<strong>tão</strong>Dev</span> e em projetos internacionais pela <strong><span style="color: #d85b13;">Objective</span></strong>;</li>
+                                <li class="fragment">Entusiasta do café e de outras tecnologias;</li>
+                                <li class="fragment">
+                                    <strong class="fragment" style="color: #007cba;">PHP com Rapadura</strong>, 
+                                    <strong class="fragment" style="color: #4537c4;">PHPeste</strong> 
+                                    <span class="fragment">e <strong style="color: #e0b12d;">FLISol</strong></span>
+                                </li>
+                                <li class="fragment">Evangelista Cristão e do software livre.</li>
+                            </ul>
+                        </div>
+                        <div style="width: 40%;">
+                            <img src="img/henrique-php-pest.jpeg" alt="">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Como assim Paruano?</h2>
+                    <span class="fragment" style="font-size: 1.5rem; color: #d85b13;">"Paruano" é um termo regional do Ceará que significa algo como "ano que vem, futuro".</span>
+                </section>
 
 
-				<section data-background="img/isso_e_tudo_pessoal.gif"></section>
+                <section>
+                    <!-- <iframe src="https://giphy.com/embed/XDjOHjE5OTWJxYoSrY" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hellohabitat-habitat-hello-mijnhabitat-XDjOHjE5OTWJxYoSrY"></a></p> -->
+                    <iframe src="https://giphy.com/embed/7qsy0r6iwCJsURssZY" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/HistoryLAT-brand-history-hist-7qsy0r6iwCJsURssZY"></a></p>
+                </section>
 
-				<section>
-					<p class="r-fit-text">DÚVIDAS?</p>
-				</section>
+                 <section>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Logo PHP" style="width: 300px;">
+                    <p>De ferramenta pessoal a linguagem dominante na web</p>
+                    <p><small>1994 - Presente</small></p>
+                </section>
 
-				<section>
-					<h2>Referências</h2>
-					<h4>E de onde tu tirou isso homi?</h4>
-				</section>
+                <!-- <section>
+                    <h2>O que é PHP?</h2>
+                    <ul>
+                        <li class="fragment">Linguagem de script de uso geral</li>
+                        <li class="fragment">Especialmente adequada para desenvolvimento web</li>
+                        <li class="fragment">Acrônimo recursivo: <strong>PHP: Hypertext Preprocessor</strong></li>
+                        <li class="fragment">Open source e multiplataforma</li>
+                        <li class="fragment">Uma das linguagens mais populares para desenvolvimento web</li>
+                    </ul>
+                </section> -->
 
-				<section>
-					Valeu primo!
+                <section>
+                    <h2>Os Primeiros Dias (1994-1995)</h2>
+                    <ul>
+                        <li class="fragment"><span class="version-badge">1994</span> Rasmus Lerdorf cria "PHP Tools"</li>
+                        <li class="fragment">Conjunto de binários CGI em C para rastrear visitas ao seu currículo</li>
+                        <li class="fragment"><span class="version-badge">1995</span> Código liberado publicamente</li>
+                        <li class="fragment">Nome mudou brevemente para FI ("Forms Interpreter")</li>
+                        <li class="fragment">Voltou a ser PHP: "Personal Home Page Construction Kit"</li>
+                    </ul>
+                </section>
 
-					<br><br><br>
+                <section>
+                    <div class="founder">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <img src="https://pbs.twimg.com/profile_images/918348833205116928/V9ROYRNJ_400x400.jpg" alt="Rasmus Lerdorf" style="border-radius: 50%; width: 150px;">
+                            <strong style="font-size: 4rem;">Rasmus Lerdorf</strong>
+                        </div>
+                        <div class="founder-info">
+                            <ul>
+                                <li class="fragment">Nascido na Groenlândia (1968)</li>
+                                <li class="fragment">Engenheiro de software dinamarquês-canadense</li>
+                                <li class="fragment">Criou o PHP para gerenciar seu site pessoal</li>
+                                <li class="fragment">Não planejava criar uma linguagem de programação</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-					@henriquelopeslima
-					<br>
+                <section>
+                    <img src="https://rapaduratech.com.br/wp-content/uploads/2023/08/37441761060_79be42d649_k_auto_x2_light_ai-1024x684.jpg" alt="Rasmus Lerdorf">
+                </section>
 
-					https://linkedin.com/in/henriquelopeslima
+                <section>
+                    <h2>PHP/FI 2.0 (1996-1997)</h2>
+                    <ul>
+                        <li><span class="version-badge">1996</span> PHP/FI introduzido</li>
+                        <li>Evoluiu de ferramentas para linguagem de programação</li>
+                        <li>Suporte a bancos de dados (DBM, mSQL)</li>
+                        <li>Implementação de cookies</li>
+                        <li>Funções definidas pelo usuário</li>
+                        <li class="stats">Em 1998: ~60.000 domínios (1% da internet)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PHP 3: A Grande Reescrita (1997-1998)</h2>
+                    <ul>
+                        <li><span class="version-badge">1997</span> Andi Gutmans e Zeev Suraski reescrevem o interpretador</li>
+                        <li>Colaboração com Rasmus Lerdorf</li>
+                        <li>Nome simplificado para PHP: "PHP: Hypertext Preprocessor"</li>
+                        <li>Fortes recursos de extensibilidade</li>
+                        <li>Introdução à programação orientada a objetos</li>
+                        <li class="stats">10% dos servidores web no auge</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PHP 4: Zend Engine (2000)</h2>
+                    <ul>
+                        <li><span class="version-badge">2000</span> Lançamento do PHP 4</li>
+                        <li>Motor Zend Engine (Zeev + Andi)</li>
+                        <li>Melhorias significativas de desempenho</li>
+                        <li>Suporte a mais servidores web</li>
+                        <li>Sessões HTTP</li>
+                        <li>Novas construções de linguagem</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PHP 5: Maturidade (2004)</h2>
+                    <ul>
+                        <li><span class="version-badge">2004</span> Lançamento do PHP 5</li>
+                        <li>Zend Engine 2.0</li>
+                        <li>Novo modelo de objetos</li>
+                        <li>PDO (PHP Data Objects)</li>
+                        <li>Melhor suporte a XML</li>
+                        <li>Tratamento de exceções melhorado</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PHP 7: Salto de Desempenho (2015)</h2>
+                    <ul>
+                        <li><span class="version-badge">2015</span> Lançamento do PHP 7</li>
+                        <li>Zend Engine 3.0</li>
+                        <li>Até 2x mais rápido que PHP 5.6</li>
+                        <li>Menor uso de memória</li>
+                        <li>Suporte consistente a 64 bits</li>
+                        <li>Classes anônimas</li>
+                        <li>Operador de coalescência nula (??)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PHP 8: Modernização (2020)</h2>
+                    <ul>
+                        <li>Argumentos Nomeados</li>
+                        <li>Match Expression</li>
+                        <li>União de tipos</li>
+                        <li>Atributos</li>
+                        <li>Operador Nullsafe</li>
+                        <li>JIT Compiler</li>
+                        <li>Enums & Fibers</li>
+                    </ul>
+                    <p class="fragment" style="font-size: 2rem; color: #d85b13;">Essa base preparou o terreno para as ferramentas modernas.</p>
+                </section>
+
+                <!-- <section class="timeline-slide">
+                    <h2>Linha do Tempo do PHP</h2>
+                    <ul>
+                        <li><span class="version-badge">1994</span> PHP Tools - Rasmus Lerdorf</li>
+                        <li><span class="version-badge">1995</span> PHP/FI - Forms Interpreter</li>
+                        <li><span class="version-badge">1996</span> PHP/FI 2.0</li>
+                        <li><span class="version-badge">1998</span> PHP 3 - Reescrita completa</li>
+                        <li><span class="version-badge">2000</span> PHP 4 - Zend Engine</li>
+                        <li><span class="version-badge">2004</span> PHP 5 - Maturidade</li>
+                        <li><span class="version-badge">2015</span> PHP 7 - Salto de performance</li>
+                        <li><span class="version-badge">2020</span> PHP 8 - Modernização</li>
+                    </ul>
+                </section> -->
+
+                <section>
+                    <h2>Sabendo disso o que podemos afirmar?</h2>
+                </section>
+
+                <section>
+                    <h2 class="fragment">O PHP não é o mesmo</h2>
+                    <ul style="font-size: 2.5rem; line-height: 1.5;">
+                        <li class="fragment">De linguagem "frouxa" para robusta e tipada.</li>
+                        <li class="fragment" data-id="cangote">Cangote de Jegue (Bloqueio em I/O).</li>
+                        <li class="fragment" data-id="farinheira">Casa de Farinheira (Bagunça de strings mágicas).</li>
+                        <li class="fragment" data-id="escuro">Caminhada no Escuro (<strong>Fatal Error</strong> por causa de <strong>null</strong>).</li>
+                    </ul>
+                    <!-- <h4 class="fragment" style="color: #d85b13;">Solução: A lamparina da performance, segurança e clareza.</h4> -->
+                </section>
+
+                <!-- <section>
+                    <h3>PHP 8.0: Rigor e Expressividade</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Match Expression: Alternativa mais segura ao `switch` (retorna valor e usa comparação estrita `===`). [4]</li>
+                        <li class="fragment">Attributes: Metadados estruturados (`#[...]`) substituindo anotações PHPDoc. [4]</li>
+                        <li class="fragment">Tipagem Consistente: Funções internas lançam `TypeError`/`ValueError` (em vez de *Warnings*). [4]</li>
+                    </ul>
+                </section> -->
+
+                <section>
+                    <h2>Fibers</h2>
+                    <h3>Acabando com o "Cangote de Jegue"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: I/O Bloqueante. O script para e espera por APIs/DBs.</li>
+                        <li class="fragment">Solução (PHP 8.1): Fibers (Funções pausáveis).</li>
+                        <li class="fragment">Conceito: Multitarefa Cooperativa. Você cede o controle.</li>
+                        <li class="fragment">Analogia: Pausar um livro no meio da página e retomar depois, sem perder o contexto.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fibers vs. Generators: A Pilha</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Generators (`yield`): *Stackless*. A pausa só pode ocorrer na função que contém o `yield`.</li>
+                        <li class="fragment">Fibers (`Fiber::suspend()`): *Stackful*. A pausa ocorre em qualquer nível de aninhamento. </li>
+                        <li class="fragment" style="color: #416d31;">Elimina o problema do "qual cor é sua função?".</li>
+                    </ul>
+                    <h4 class="fragment">Vantagem Prática: Concorrência de I/O</h4>
+                    <p class="fragment" style="font-size: 1.5rem;">O tempo total de 3 requisições é reduzido da soma dos tempos para o tempo da requisição mais longa. [8]</p>
+                </section>
+
+                <section>
+                    <h2>Enums</h2>
+                    <h3>Organizando a "Casa de Farinheira"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: O uso de strings/números mágicos espalhados pelo código. [1]</li>
+                        <li class="fragment">Risco: Erros de digitação levam a *bugs* silenciosos. [1]</li>
+                        <li class="fragment">Solução (PHP 8.1): Enumerações - um tipo de dado nativo, finito e seguro. </li>
+                        <li class="fragment" style="color: #416d31;">Resultado: 'Making invalid states unrepresentable'. </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Enums: Tipagem Forte em Ação</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Pure Enums: Apenas nomes (`case Draft;`).</li>
+                        <li class="fragment">Backed Enums: Com valor escalar (`string` ou `int`) para persistência em DB. [9]</li>
+                    </ul>
+                    <h4 class="fragment">Integração com o Banco de Dados:</h4>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">`::from(value)`: Converte valor escalar para Enum Case. Lança `ValueError` se o valor não existir. [10]</li>
+                        <li class="fragment">`::tryFrom(value)`: Retorna o Enum Case ou `null` se não encontrar (ideal para dados não confiáveis). [10]</li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Enums: O Custo do Caos (Antes)
+                        
+                        Problema: A falta de tipagem permite qualquer string.
+
+                        ```php
+                        // Antes (Strings Mágicas)
+                        function updateStatus(string $status) {
+                            //... lógica...
+                        }
+                        
+                        updateStatus('published'); // OK
+                        updateStatus('publishe');  // Bug silencioso!
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Enums: O Rigor do Novo (Depois)
+                        
+                        Solução: A tipagem garante a integridade dos dados no nível da linguagem. [7]
+
+                        ```php
+                        // Depois (Enum Tipado)
+                        enum PostStatus: string {
+                            case Draft = 'draft';
+                            case Published = 'published';
+                        }
+                        
+                        function updateStatus(PostStatus $status) {
+                            //... lógica garantida...
+                        }
+                        
+                        updateStatus(PostStatus::Published); // OK
+                        updateStatus('publishe'); // Fatal: TypeError!
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Nullsafe Operator</h2>
+                    <h3>"Ligando a Lamparina" no seu Código</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: `Fatal Error` ao navegar em cadeias de chamadas que podem retornar `null`. </li>
+                        <li class="fragment">A Solução (PHP 8.0): O operador `?->` (Nullsafe). [11]</li>
+                        <li class="fragment">Mecânica: Interrompe a cadeia de chamadas ao encontrar `null`, retornando `null` de forma segura. [12, 13]</li>
+                        <li class="fragment" style="color: #416d31;">Reduz o *boilerplate* de múltiplos `if`s aninhados. </li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Nullsafe: A "Caminhada no Escuro" (Antes)
+                        
+                        Problema: Múltiplas checagens de `null` para evitar quebra.
+
+                        ```php
+                        // Antes (Checagem manual)
+                        $country = null;
+                        if ($session!== null) {
+                            $user = $session->user;
+                            if ($user!== null) {
+                                $address = $user->getAddress();
+                                if ($address!== null) {
+                                    $country = $address->country;
+                                }
+                            }
+                        }
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Nullsafe: A Concisão da Lamparina (Depois)
+                        
+                        Solução: Expressão única, clara e segura.
+
+                        ```php
+                        // Depois (Com?->)
+                        $country = $session?->user?->getAddress()?->country;
+                        
+                        // Uso combinado com Null Coalescing (??)
+                        $city = $user?->getAddress()?->getCity()?? 'Cidade Desconhecida';
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <h3>Nullsafe: Potenciais "Tombos"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">É Read-Only: Não pode ser usado para atribuir valores. [12]</li>
+                        <li class="fragment">Pode mascarar erros de lógica: Transforma uma exceção em um `null` silencioso. [4]</li>
+                        <li class="fragment">`?->` (Chain) é diferente de `??` (Fallback Value). </li>
+                        <li class="fragment" style="color: #d85b13;">Melhor Prática: Use para sintaxe. A checagem de nulo é movida para o resultado final. [4]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Olhando para o Futuro</h2>
+                    <h3>As RFCs Mais "Desinibidas" (PHP 8.5+)</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">O `Pipe Operator` (`|>`) (PHP 8.5, Implementado): [14, 2]</li>
+                        <li class="fragment">Função: Passa o resultado da esquerda como argumento para a função à direita. [14]</li>
+                        <li class="fragment">Objetivo: Eliminar o aninhamento de funções em favor de um fluxo linear e funcional. [14]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>O PHP 8.x não é mais o PHP antigo</h2>
+                    <ul style="font-size: 2.5rem; line-height: 1.5;">
+                        <li class="fragment">De linguagem "frouxa" para robusta e tipada.</li>
+                        <li class="fragment" data-id="cangote">Cangote de Jegue (Bloqueio em I/O).</li>
+                        <li class="fragment" data-id="farinheira">Casa de Farinheira (Bagunça de strings mágicas).</li>
+                        <li class="fragment" data-id="escuro">Caminhada no Escuro (<strong>Fatal Error</strong> por causa de <strong>null</strong>).</li>
+                    </ul>
+                    <h4 class="fragment" style="color: #d85b13;">Solução: A lamparina da performance, segurança e clareza.</h4>
+                </section>
+
+                <section>
+                    <h2>Contexto Histórico</h2>
+                    <h3>A Fundamentação da Tipagem (PHP 7.x)</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Revolução de Performance e Tipagem Escalar (Parâmetros e Retorno). [3]</li>
+                        <li class="fragment">Combate a Nulos #1: `Null Coalescing Operator` (`??`) (PHP 7.0). [3]</li>
+                        <li class="fragment">O `??` fornece um valor padrão se a variável/índice for `null` ou indefinido. [3]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>PHP 8.0: Rigor e Expressividade</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Match Expression: Alternativa mais segura ao `switch` (retorna valor e usa comparação estrita `===`). [4]</li>
+                        <li class="fragment">Attributes: Metadados estruturados (`#[...]`) substituindo anotações PHPDoc. [4]</li>
+                        <li class="fragment">Tipagem Consistente: Funções internas lançam `TypeError`/`ValueError` (em vez de *Warnings*). [4]</li>
+                        <li class="fragment" style="color: #d85b13;">Essa base preparou o terreno para as ferramentas modernas.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Fibers</h2>
+                    <h3>Acabando com o "Cangote de Jegue"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: I/O Bloqueante. O script para e espera por APIs/DBs. [5]</li>
+                        <li class="fragment">Solução (PHP 8.1): Fibers (Funções pausáveis). </li>
+                        <li class="fragment">Conceito: Multitarefa Cooperativa. Você cede o controle. </li>
+                        <li class="fragment">Analogia: Pausar um livro no meio da página e retomar depois, sem perder o contexto. </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fibers vs. Generators: A Pilha</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Generators (`yield`): *Stackless*. A pausa só pode ocorrer na função que contém o `yield`. [6]</li>
+                        <li class="fragment">Fibers (`Fiber::suspend()`): *Stackful*. A pausa ocorre em qualquer nível de aninhamento. </li>
+                        <li class="fragment" style="color: #416d31;">Elimina o problema do "qual cor é sua função?". [7]</li>
+                    </ul>
+                    <h4 class="fragment">Vantagem Prática: Concorrência de I/O</h4>
+                    <p class="fragment" style="font-size: 1.5rem;">O tempo total de 3 requisições é reduzido da soma dos tempos para o tempo da requisição mais longa. [8]</p>
+                </section>
+
+                <section>
+                    <h2>Enums</h2>
+                    <h3>Organizando a "Casa de Farinheira"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: O uso de strings/números mágicos espalhados pelo código. [1]</li>
+                        <li class="fragment">Risco: Erros de digitação levam a *bugs* silenciosos. [1]</li>
+                        <li class="fragment">Solução (PHP 8.1): Enumerações - um tipo de dado nativo, finito e seguro. </li>
+                        <li class="fragment" style="color: #416d31;">Resultado: 'Making invalid states unrepresentable'. </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Enums: Tipagem Forte em Ação</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Pure Enums: Apenas nomes (`case Draft;`).</li>
+                        <li class="fragment">Backed Enums: Com valor escalar (`string` ou `int`) para persistência em DB. [9]</li>
+                    </ul>
+                    <h4 class="fragment">Integração com o Banco de Dados:</h4>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">`::from(value)`: Converte valor escalar para Enum Case. Lança `ValueError` se o valor não existir. [10]</li>
+                        <li class="fragment">`::tryFrom(value)`: Retorna o Enum Case ou `null` se não encontrar (ideal para dados não confiáveis). [10]</li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Enums: O Custo do Caos (Antes)
+                        
+                        Problema: A falta de tipagem permite qualquer string.
+
+                        ```php
+                        // Antes (Strings Mágicas)
+                        function updateStatus(string $status) {
+                            //... lógica...
+                        }
+                        
+                        updateStatus('published'); // OK
+                        updateStatus('publishe');  // Bug silencioso!
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Enums: O Rigor do Novo (Depois)
+                        
+                        Solução: A tipagem garante a integridade dos dados no nível da linguagem. [7]
+
+                        ```php
+                        // Depois (Enum Tipado)
+                        enum PostStatus: string {
+                            case Draft = 'draft';
+                            case Published = 'published';
+                        }
+                        
+                        function updateStatus(PostStatus $status) {
+                            //... lógica garantida...
+                        }
+                        
+                        updateStatus(PostStatus::Published); // OK
+                        updateStatus('publishe'); // Fatal: TypeError!
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Nullsafe Operator</h2>
+                    <h3>"Ligando a Lamparina" no seu Código</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">Problema: `Fatal Error` ao navegar em cadeias de chamadas que podem retornar `null`. </li>
+                        <li class="fragment">A Solução (PHP 8.0): O operador `?->` (Nullsafe). [11]</li>
+                        <li class="fragment">Mecânica: Interrompe a cadeia de chamadas ao encontrar `null`, retornando `null` de forma segura. [12, 13]</li>
+                        <li class="fragment" style="color: #416d31;">Reduz o *boilerplate* de múltiplos `if`s aninhados. </li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Nullsafe: A "Caminhada no Escuro" (Antes)
+                        
+                        Problema: Múltiplas checagens de `null` para evitar quebra.
+
+                        ```php
+                        // Antes (Checagem manual)
+                        $country = null;
+                        if ($session!== null) {
+                            $user = $session->user;
+                            if ($user!== null) {
+                                $address = $user->getAddress();
+                                if ($address!== null) {
+                                    $country = $address->country;
+                                }
+                            }
+                        }
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Nullsafe: A Concisão da Lamparina (Depois)
+                        
+                        Solução: Expressão única, clara e segura.
+
+                        ```php
+                        // Depois (Com?->)
+                        $country = $session?->user?->getAddress()?->country;
+                        
+                        // Uso combinado com Null Coalescing (??)
+                        $city = $user?->getAddress()?->getCity()?? 'Cidade Desconhecida';
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <h3>Nullsafe: Potenciais "Tombos"</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">É Read-Only: Não pode ser usado para atribuir valores. [12]</li>
+                        <li class="fragment">Pode mascarar erros de lógica: Transforma uma exceção em um `null` silencioso. [4]</li>
+                        <li class="fragment">`?->` (Chain) é diferente de `??` (Fallback Value). </li>
+                        <li class="fragment" style="color: #d85b13;">Melhor Prática: Use para sintaxe. A checagem de nulo é movida para o resultado final. [4]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Olhando para o Futuro</h2>
+                    <h3>As RFCs Mais "Desinibidas" (PHP 8.5+)</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">O `Pipe Operator` (`|>`) (PHP 8.5, Implementado): [14, 2]</li>
+                        <li class="fragment">Função: Passa o resultado da esquerda como argumento para a função à direita. [14]</li>
+                        <li class="fragment">Objetivo: Eliminar o aninhamento de funções em favor de um fluxo linear e funcional. [14]</li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Pipe Operator: Adeus ao Aninhamento
+                        
+                        #### Antes: Ordem de execução invertida (de dentro para fora).
+
+                        ```php
+                        // Antes (Confuso)
+                        array_values(
+                            array_unique(
+                                array_merge(...array_column($arr, 'tags'))
+                            )
+                        );
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Pipe Operator: Adeus ao Aninhamento
+                        
+                        #### Depois (PHP 8.5+): Fluxo lógico (Esquerda para Direita). [14]
+
+                        ```php
+                        // Depois (Com |>)
+                        $arr
+
+|> (fn($x) => array_column($x, 'tags'))
+|> (fn($x) => array_merge(...$x))
+|> array_unique(...)
+|> array_values(...);
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <h3>O Próximo Nível (PHP 8.5 e 9.0)</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">PHP 8.5:</li>
+                        <li class="fragment">`Final Property Promotion`: Consistência na sintaxe de propriedades imutáveis. [1]</li>
+                        <li class="fragment">`#`: Atributo que avisa se o retorno importante for ignorado. [2]</li>
+                        <li class="fragment">PHP 9.0 (O Endurecimento):</li>
+                        <li class="fragment">Promoção de `Warnings` a `Fatal Errors` (ex: variáveis indefinidas). [15]</li>
+                        <li class="fragment">Remoção de sintaxes arcaicas (`${}` em strings). [15]</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Conclusão: Abrace a Mudança</h2>
+                    <h3 style="color: #416d31;">O PHP Moderno é:</h3>
+                    <ul style="font-size: 2rem; line-height: 1.5;">
+                        <li class="fragment">✅ Mais Rápido (Graças aos Fibers).</li>
+                        <li class="fragment">✅ Mais Seguro (Graças aos Enums).</li>
+                        <li class="fragment">✅ Mais Limpo (Graças ao Nullsafe).</li>
+                    </ul>
+                    <h4 class="fragment">O PHP está mais "de boa na lagoa" do que nunca.</h4>
+                </section>
+
+                <section data-background="img/isso_e_tudo_pessoal.gif"></section>
+
+                <section>
+                    <p class="r-fit-text">DÚVIDAS?</p>
+                </section>
+
+                <section>
+                    <h2>Referências</h2>
+                    <h4>E de onde tu tirou isso homi?</h4>
+                </section>
+
+                <section>
+                    Valeu primo!
+
+                    <br><br><br>
+
+                    @henriquelopeslima
+                    <br>
+
+                    https://linkedin.com/in/henriquelopeslima
 
                     <br>
 
                     <strong>Soli Deo Gloria</strong>
-				</section>
-			</div>
-		</div>
+                </section>
+            </div>
+        </div>
 
-		<script src="../dist/reveal.js"></script>
-		<script src="../plugin/notes/notes.js"></script>
-		<script src="../plugin/markdown/markdown.js"></script>
-		<script src="../plugin/highlight/highlight.js"></script>
-		<script src="../plugin/zoom/zoom.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
-		<script>
-			Reveal.initialize({
-				hash: true,
-				mermaid: {
-					// flowchart: {
-					//   curve: 'linear',
-					// },
-				},
-				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMermaid ],
-			});
-		</script>
-	</body>
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/zoom/zoom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.3.0/plugin/mermaid/mermaid.js"></script>
+        <script>
+            // CORREÇÃO: Envolver a inicialização em window.onload para garantir que todas
+            // as folhas de estilo estejam carregadas antes do Reveal.js forçar o layout,
+            // evitando o aviso de FOUC/Layout Forced.
+            window.onload = function() {
+                Reveal.initialize({
+                    hash: true,
+                    mermaid: {
+                        // flowchart: {
+                        //   curve: 'linear',
+                        // },
+                    },
+                });
+            }
+        </script>
+    </body>
 </html>
